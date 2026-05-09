@@ -26,7 +26,7 @@ sage: P.list()
 [7, 9, 5, 10, 2, 4, 1, 6, 3, 8]
 ```
 
-### Distance between elements
+#### Distance between elements
 Use the function `k_distance` to calculate the (symmetric) distance matrix from the family of climber and diver metrics for any subset of `P`.  
 
 ```sage
@@ -62,7 +62,7 @@ P.k_distance(elements = [7,4,1,6,3], k=2,method='diver')
 [2 1 1 0 1]
 [2 1 1 1 0]
 ```
-### Length of a path
+#### Length of a path
 Given a path gamma in `P` the function `k_length` calculates the length of gamma associatated to any climber or diver metric. The input of the function are the maximal chains of gamma listed in increasing order.
 Take gamma to be the path {7,9,4,2,3}. Thus
 
@@ -86,7 +86,7 @@ sage: P.k_length(gamma,k=2, method= 'diver')
 2
 ```
 
-### A shortest path between elements 
+#### A shortest path between elements 
 Given two elements `x` and `y` in  `P`, the function `k_shortest_path` finds a path from `x` to `y` with minimal length associated to any climber or diver metric.
 
 ```sage
