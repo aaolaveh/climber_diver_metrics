@@ -9,7 +9,7 @@ This file provides a set of SageMath functions for computing the climber and div
 To load the functions to your SageMath session, ensure that you are working in the same directory as the file `functions.sage`, and then run
 
 ```sage
-load('functions.sage')
+sage: load('functions.sage')
 ```
 Take `P` to be a poset from the class `sage.combinat.posets.posets.FinitePoset` 
 ```sage
