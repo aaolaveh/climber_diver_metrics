@@ -64,7 +64,7 @@ P.k_distance(elements = [7,4,1,6,3], k=2,method='diver')
 ```
 #### Length of a path
 Given a path gamma in `P` the function `k_length` calculates the length of gamma associatated to any climber or diver metric. The input of the function are the maximal chains of gamma listed in increasing order.
-Take gamma to be the path {7,9,4,2,3}. Thus
+Take gamma to be the path $[ 7,9,4,2,3 ]$. Thus, 
 
 ```sage
 sage: gamma = [[7,9,4],[2,4],[2,3]]
