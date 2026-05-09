@@ -101,7 +101,7 @@ sage: P.k_shortest_path(x,y)
 ```
 ```sage
 sage: # fence-climber shortest path between 7 and 3
-sage: P.k_shortest_path(x,y, k=NaN )
+sage: P.k_shortest_path(x,y, k=NaN)
 [7, 9, 1, 6, 3]
 ```
 ```sage
