@@ -72,12 +72,12 @@ sage: gamma = [[7,9,4],[2,4],[2,3]]
 
 ```sage
 sage: # 1-climber length of gamma
-sage:P.k_length(gamma)
+sage: P.k_length(gamma)
 3
 ```
 ```sage
 sage: # fence-climber length of gamma
-sage:P.k_length(gamma,k=NaN)
+sage: P.k_length(gamma,k=NaN)
 2
 ```
 ```sage
@@ -87,7 +87,30 @@ sage: P.k_length(gamma,k=2, method= 'diver')
 ```
 
 ### A shortest path between elements 
-Given two elements `x` and `y ` in  `P`, the function `k_shortest_path` finds a path from `x` to `y ` with minimal length associatated to any climber or diver metric.
+Given two elements `x` and `y` in  `P`, the function `k_shortest_path` finds a path from `x` to `y` with minimal length associated to any climber or diver metric.
+
+```sage
+sage: x = 7
+sage: y = 3
+```
+
+```sage
+sage: # 1-climber shortest path between 7 and 3
+sage: P.k_shortest_path(x,y)
+[7, 9, 4, 2, 3]
+```
+```sage
+sage: # fence-climber shortest path between 7 and 3
+sage: P.k_shortest_path(x,y, k=NaN )
+[7, 9, 1, 6, 3]
+```
+```sage
+sage: # 2-diver shortest path between 7 and 3
+sage: P.k_shortest_path(x,y, k=2, method= 'diver') 
+[7, 9, 4, 2, 3]
+```
+
+
 
 
 
