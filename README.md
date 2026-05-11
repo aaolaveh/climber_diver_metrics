@@ -29,18 +29,17 @@ sage: P.list()
 #### Distance between elements
 Use the function `k_distance` to calculate the (symmetric) distance matrix from the family of climber and diver metrics for any subset of `P`.  
 
+* 1-climber distance between the elements 7,2,3, and 10 in `P`.
 ```sage
-sage: #1-climber distance between the elements 7,2,3, and 10 in P
-sage: P.k_distance(elements = [7,2,3,10])
+sage: P.k_distance(elmts = [7,2,3,10], k=1)
 [0 2 3 3]
 [2 0 1 3]
 [3 1 0 4]
 [3 3 4 0]
 ```
-
+* fence-climber(infty-climber) distance between all elements in `P`
 ```sage
-sage: #fence-climber(infty-climber) distance between all elements of P
-sage: P.k_distance(k=NaN)
+sage: P.k_distance()
 [0 1 1 2 1 1 1 1 1 1]
 [1 0 1 2 1 1 1 1 1 1]
 [1 1 0 1 1 2 1 1 1 1]
@@ -52,10 +51,10 @@ sage: P.k_distance(k=NaN)
 [1 1 1 2 1 2 1 1 0 2]
 [1 1 1 2 1 2 1 2 2 0]
 ```
+* 2-diver distance between the elements 7,4,1,6 and 3 in `P` 
 
 ```sage
-#2-diver distance between the elements 7,4,1,6 and 3 in P 
-P.k_distance(elements = [7,4,1,6,3], k=2,method='diver')
+sage: P.k_distance(elmts = [7,4,1,6,3], k=2,method='diver')
 [0 1 1 2 2]
 [1 0 1 1 1]
 [1 1 0 1 1]
