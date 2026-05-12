@@ -71,12 +71,12 @@ sage: gamma = [[7,9,4],[2,4],[2,3]]
 
 ```sage
 sage: # 1-climber length of gamma
-sage: P.k_length(gamma)
+sage: P.k_length(gamma,k=1)
 3
 ```
 ```sage
 sage: # fence-climber length of gamma
-sage: P.k_length(gamma,k=NaN)
+sage: P.k_length(gamma)
 2
 ```
 ```sage
