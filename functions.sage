@@ -530,6 +530,6 @@ def path_to_poset(self,path):
         else:
             raise ValueError(str(path[i]) + " and " + str(path[i+1]) + " are not adjacent")
 
-    return(Poset((path, rels), cover_relations = True, facade = True))
+    return(Poset((path, rels), cover_relations = True))
 
 sage.combinat.posets.posets.FinitePoset.path_to_poset=  path_to_poset
