@@ -68,19 +68,18 @@ Take gamma to be the path $[ 7,9,4,2,3 ]$. Thus,
 ```sage
 sage: gamma = [[7,9,4],[2,4],[2,3]]
 ```
-
+* 1-climber length of gamma
 ```sage
-sage: # 1-climber length of gamma
 sage: P.k_length(gamma,k=1)
 3
 ```
+* fence-climber length of gamma
 ```sage
-sage: # fence-climber length of gamma
 sage: P.k_length(gamma)
 2
 ```
+* 2-diver length of gamma
 ```sage
-sage: # 2-diver length of gamma
 sage: P.k_length(gamma,k=2, method= 'diver')
 2
 ```
@@ -92,19 +91,18 @@ Given two elements `x` and `y` in  `P`, the function `k_shortest_path` finds a p
 sage: x = 7
 sage: y = 3
 ```
-
+* 1-climber shortest path between 7 and 3
 ```sage
-sage: # 1-climber shortest path between 7 and 3
-sage: P.k_shortest_path(x,y)
+sage: P.k_shortest_path(x,y,k=1)
 [7, 9, 4, 2, 3]
 ```
+* fence-climber shortest path between 7 and 3
 ```sage
-sage: # fence-climber shortest path between 7 and 3
-sage: P.k_shortest_path(x,y, k=NaN)
+sage: P.k_shortest_path(x,y)
 [7, 9, 1, 6, 3]
 ```
+* 2-diver shortest path between 7 and 3
 ```sage
-sage: # 2-diver shortest path between 7 and 3
 sage: P.k_shortest_path(x,y, k=2, method= 'diver') 
 [7, 9, 4, 2, 3]
 ```
