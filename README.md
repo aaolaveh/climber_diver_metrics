@@ -1,8 +1,8 @@
 # Climber and diver metrics for posets
 
-This file provides a set of SageMath functions for computing the climber and diver distances between elments in finite posets as well as the calculation of the shortest path in this context. These metrics are introduced in an article soon to be submitted in arXiv 
+This file provides a set of SageMath functions for computing the climber and diver distances between elments in finite posets as well as the calculation of the shortest path in this context. These metrics are introduced in an arXiv article.
 
-> Olave A. A. "A new family of distances over partially ordered sets".
+> Olave, A. A., A new family of distances over partially ordered sets, Preprint available at arXiv:2606.06377 (2026)
 
 ## Usage
 
